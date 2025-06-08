@@ -30,7 +30,7 @@ INSERT INTO vehicles (VIN, make, model, vehicle_type, color, vehicle_year, odome
 ('1HGCM82633A004352', 'Honda', 'Accord', 'Sedan', 'Black', 2022, 15000, 22000.00, 'NO'),
 ('1N4AL11D75C109151', 'Nissan', 'Altima', 'Sedan', 'White', 2021, 22000, 18000.00, 'NO'),
 ('2C3KA53G66H123456', 'Chrysler', '300', 'Sedan', 'Silver', 2020, 30000, 19500.00, 'YES'),
-('3VWFE21C04M000001', 'Volkswagen', 'Jetta', 'Sedan', 'Blue', 2023, 8000, 25000.00, 'NO'),
+('3VWFE21C04M000001', 'Volkswagen', 'Jetta', 'Sedan', 'Blue', 2023, 8000, 25000.00, 'YES'),
 ('5FNYF4H97FB045678', 'Honda', 'Pilot', 'SUV', 'Gray', 2019, 45000, 27000.00, 'YES');
 
 
@@ -62,7 +62,8 @@ FOREIGN KEY (VIN) REFERENCES vehicles(VIN)
 
 INSERT INTO sales_contracts (contract_date, customer_name, customer_email, total_price, VIN) VALUES
 ('2025-06-01', 'John Doe', 'john.doe@example.com', 19500.00, '2C3KA53G66H123456'),
-('2025-06-03', 'Jane Smith', 'jane.smith@example.com', 27000.00, '5FNYF4H97FB045678');
+('2025-06-03', 'Jane Smith', 'jane.smith@example.com', 27000.00, '5FNYF4H97FB045678'),
+('2024-06-02', 'Jayla Dolly', 'jayla.dolly@example.com', 25000.00, '3VWFE21C04M000001');
 
 
 
