@@ -34,8 +34,8 @@ INSERT INTO vehicles (VIN, make, model, vehicle_type, color, vehicle_year, odome
 ('5FNYF4H97FB045678', 'Honda', 'Pilot', 'SUV', 'Gray', 2019, 45000, 27000.00, 'YES'),
 ('1FTFW1EF1EKE12345', 'Ford', 'F-150', 'Truck', 'Red', 2022, 12000, 35000.00, 'YES'),
 ('WBA8D9C57HA012345', 'BMW', '328i', 'Sedan', 'Black', 2021, 18000, 32000.00, 'YES'),
-('JHMFA16586S012345', 'Honda', 'Civic', 'Sedan', 'White', 2020, 28000, 19000.00, 'NO'),
 ('3FA6P0K96DR123456', 'Ford', 'Fusion', 'Sedan', 'Silver', 2019, 40000, 17000.00, 'YES'),
+('JHMFA16586S012345', 'Honda', 'Civic', 'Sedan', 'White', 2020, 28000, 19000.00, 'NO'),
 ('1C4RJFBG0FC123456', 'Jeep', 'Grand Cherokee', 'SUV', 'Gray', 2022, 16000, 40000.00, 'NO');
 
 CREATE TABLE inventory(
@@ -49,14 +49,15 @@ PRIMARY KEY (dealership_id, VIN)
 INSERT INTO inventory (dealership_id, VIN) VALUES
 (1, '1HGCM82633A004352'),
 (1, '1N4AL11D75C109151'),
+(1, '1FTFW1EF1EKE12345'),
+(1, '3FA6P0K96DR123456'),
 (2, '2C3KA53G66H123456'),
 (2, '3VWFE21C04M000001'),
-(3, '5FNYF4H97FB045678'),
-(1, '1FTFW1EF1EKE12345'),
+(2, '1C4RJFBG0FC123456'),
 (2, 'WBA8D9C57HA012345'),
-(3, 'JHMFA16586S012345'),
-(1, '3FA6P0K96DR123456'),
-(2, '1C4RJFBG0FC123456');
+(3, '5FNYF4H97FB045678'),
+(3, 'JHMFA16586S012345')
+;
 
 
 CREATE TABLE sales_contracts(
